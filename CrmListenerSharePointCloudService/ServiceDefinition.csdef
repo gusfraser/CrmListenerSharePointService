@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="CrmListenerSharePointCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="CrmListenerSharePointWorkerRole" vmsize="Small">
+  <ConfigurationSettings>
+    <Setting name="ServiceBus.CRM.Topic" />
+    <Setting name="ServiceBus.CRM.Subscription" />
+    <Setting name="ServiceBus.ConnectionString" />
+    <Setting name="SharePoint.Username" />
+    <Setting name="SharePoint.Password" />
+    <Setting name="SharePoint.STS.Reply.URL" />
+    <Setting name="SharePoint.Client.SiteRoot" />
+    <Setting name="SharePoint.Client.CRM.Folder" />
+    <Setting name="SharePoint.Client.Site.Template" />
+    <Setting name="CRM.ConnectionString" />
+  </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>
